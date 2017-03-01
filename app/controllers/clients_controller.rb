@@ -9,6 +9,7 @@ class ClientsController < ApplicationController
     :back
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
   def new
   @client = client.create( name: params[:name], description: params[:description])
   #this redirect only applies for when the client was successfully created! You'll have to modify this  code with an if statement to RENDER the new view IF there are errors ELSE REDIRECT to the clients view if there weren't errors.
@@ -27,6 +28,8 @@ private
   end
 
 =======
+=======
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 
   def log_reg
   end
@@ -48,5 +51,8 @@ private
   def client_params
     params.require(:client).permit(:name,:email,:password,:password_confirmation)
   end
+<<<<<<< HEAD
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
+=======
 >>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 end

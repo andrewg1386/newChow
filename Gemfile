@@ -27,8 +27,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 <<<<<<< HEAD
+<<<<<<< HEAD
  gem 'bcrypt', '~> 3.1.7'
  gem 'hirb'
+=======
+gem 'bcrypt', '~> 3.1.7'
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 =======
 gem 'bcrypt', '~> 3.1.7'
 >>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
