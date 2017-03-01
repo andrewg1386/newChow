@@ -7,7 +7,9 @@ Rails.application.routes.draw do
 
   post "clients" => "clients#create"
 
-  get 'clients/delete' => "cliens#destroy"
+  get 'clients/delete' => "clients#destroy"
+
+  get 'clients/:id' => "clients#show"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

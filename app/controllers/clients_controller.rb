@@ -1,4 +1,4 @@
-Clientclass ClientsController < ApplicationController
+class ClientsController < ApplicationController
   def index
     @clients = Client.all
     if params[:search]
@@ -6,4 +6,23 @@ Clientclass ClientsController < ApplicationController
     else
       @Clients = Client.all.order("created_at DESC")
     end
+    :back
   end
+  def new
+  @client = client.create( name: params[:name], description: params[:description])
+  #this redirect only applies for when the client was successfully created! You'll have to modify this  code with an if statement to RENDER the new view IF there are errors ELSE REDIRECT to the clients view if there weren't errors.
+  redirect_to '/clients'
+end
+def edit
+  @clients = Client.find(name: params[:name], email: params[:email])
+end
+def show
+  @clients = Client.search(params[:city])
+end
+
+private
+  def client_params
+    params.require(:client).permit(:name, :email, :password)
+  end
+
+end

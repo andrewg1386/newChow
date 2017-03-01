@@ -1,8 +1,32 @@
 <h1>streetchow</h1>
 <p>connecting bums with grub</p>
+<form class="clients" action="clients/<%=:id%>" method="get">
+  <input type="text" name="search" placeholder="Search..">
+  <input type="submit" name="" value="show">
+</form>
 
-<label>
-  <form class="search" action="index.html" method="post">
 
-  </form>
-</label>
+
+
+<div class="locations">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>street</th>
+
+
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @clients.each do |client| %>
+        <tr>
+          <td><%= client.name %></td>
+          <td><%= client.street %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
