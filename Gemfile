@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+gem 'hirb'
+gem 'gmaps4rails'
+gem 'bootstrap-generators'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -24,8 +26,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
  gem 'bcrypt', '~> 3.1.7'
  gem 'hirb'
+=======
+gem 'bcrypt', '~> 3.1.7'
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 
 # Use Unicorn as the app server
 # gem 'unicorn'

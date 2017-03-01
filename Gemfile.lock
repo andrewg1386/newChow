@@ -40,6 +40,8 @@ GEM
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-generators (3.3.4)
+      railties (>= 3.1.0)
     builder (3.2.3)
     byebug (9.0.6)
     coffee-rails (4.1.1)
@@ -55,6 +57,10 @@ GEM
     execjs (2.7.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+<<<<<<< HEAD
+=======
+    gmaps4rails (2.1.2)
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
     hirb (0.7.3)
     i18n (0.8.1)
     jbuilder (2.6.3)
@@ -147,8 +153,15 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
+<<<<<<< HEAD
   byebug
   coffee-rails (~> 4.1.0)
+=======
+  bootstrap-generators
+  byebug
+  coffee-rails (~> 4.1.0)
+  gmaps4rails
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
   hirb
   jbuilder (~> 2.0)
   jquery-rails
@@ -162,4 +175,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.14.4
+   1.14.5
