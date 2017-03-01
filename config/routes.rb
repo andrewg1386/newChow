@@ -8,22 +8,12 @@ Rails.application.routes.draw do
   get 'clients/:id/edit' => "clients#edit"
 
   get 'clients/new' => "clients#new"
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   post "clients" => "clients#create"
 
   get 'clients/delete' => "clients#destroy"
 
   get 'clients/:id' => "clients#show"
-=======
-  get 'clients/delete' => "cliens#destroy"
->>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
-
-=======
-  get 'clients/delete' => "cliens#destroy"
-
->>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
   post "/clients" => "clients#create"
   post "/sessions" => "sessions#home"
   # The priority is based upon order of creation: first created -> highest priority.
