@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
+  get 'sessions/index'
+
   get '/' => "clients#index"
+
+  get 'clients/log_reg' => 'clients#log_reg'
 
   get 'clients/:id/edit' => "clients#edit"
 
   get 'clients/new' => "clients#new"
-
-  post "clients" => "clients#create"
-
   get 'clients/delete' => "cliens#destroy"
 
-
+  post "/clients" => "clients#create"
+  post "/sessions" => "sessions#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
