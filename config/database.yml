@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: streetchow2_production
-  username: streetchow2
+  username: vagrant
   password: <%= ENV['STREETCHOW2_DATABASE_PASSWORD'] %>

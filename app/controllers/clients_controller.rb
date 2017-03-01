@@ -1,4 +1,4 @@
-Clientclass ClientsController < ApplicationController
+class ClientsController < ApplicationController
   def index
     @clients = Client.all
     if params[:search]
@@ -7,3 +7,4 @@ Clientclass ClientsController < ApplicationController
       @Clients = Client.all.order("created_at DESC")
     end
   end
+end
