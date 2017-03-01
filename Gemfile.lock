@@ -58,6 +58,10 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    gmaps4rails (2.1.2)
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 =======
     gmaps4rails (2.1.2)
 >>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
@@ -154,8 +158,15 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (~> 3.1.7)
 <<<<<<< HEAD
+<<<<<<< HEAD
   byebug
   coffee-rails (~> 4.1.0)
+=======
+  bootstrap-generators
+  byebug
+  coffee-rails (~> 4.1.0)
+  gmaps4rails
+>>>>>>> a1a153c7bf129cc7cadf8acd0b3c6fe645bc1bef
 =======
   bootstrap-generators
   byebug
