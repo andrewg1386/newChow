@@ -15,6 +15,8 @@
 //= require turbolinks
 // = require bootstrap
 //= require_tree .
+//= require underscore-min
+//= require gmaps/google
 (function($) {
     "use strict";
 

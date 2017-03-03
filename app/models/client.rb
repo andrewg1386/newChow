@@ -6,4 +6,6 @@ class Client < ActiveRecord::Base
   def self.search(search)
     where("name ILIKE ?","%#{search}%")
   end
+  # geocoded_by :full_street_adress
+  # after_validation :geocode
 end

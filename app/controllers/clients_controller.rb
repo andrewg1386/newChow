@@ -21,14 +21,10 @@ def show
   @clients = Client.search(params[:city])
 end
 
-
-
-
   def log_reg
   end
 
-  def show
-  end
+
 
   def create
     client = Client.new(client_params)
@@ -42,5 +38,4 @@ end
   def client_params
     params.require(:client).permit(:name,:email,:password,:password_confirmation,:street,:city,:state,:zip)
   end
-
 end
